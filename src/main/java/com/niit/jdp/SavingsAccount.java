@@ -90,4 +90,18 @@ public class SavingsAccount {
     public void setModeOfOperation(String modeOfOperation) {
         this.modeOfOperation = modeOfOperation;
     }
+
+    public double retrieveBalance(double availableBalance) {
+        return availableBalance;
+    }
+
+    public double debitBalance(double cash) {
+        return availableBalance - cash;
+    }
+
+    public double creditBalance(double cash) {
+        return availableBalance + cash;
+
+    }
+
 }
