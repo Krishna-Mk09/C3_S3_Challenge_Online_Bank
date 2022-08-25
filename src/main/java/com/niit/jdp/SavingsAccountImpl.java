@@ -10,6 +10,13 @@ package com.niit.jdp;
 
 public class SavingsAccountImpl {
     public static void main(String[] args) {
+       SavingsAccount savingsAccount = new SavingsAccount();
+       savingsAccount.getAccountNumber();
+       savingsAccount.getAccountStatus();
+       savingsAccount.getAccountHoldersName();
+       savingsAccount.getAccountOpeningDate();
+       savingsAccount.creditBalance();
+       savingsAccount.debitBalance();
+       savingsAccount.retrieveBalance();
 
     }
-}

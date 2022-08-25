@@ -19,6 +19,9 @@ public class SavingsAccount {
     private float intrestRate;
     private String modeOfOperation;
 
+    public SavingsAccount() {
+    }
+
     public String getAccountHoldersName() {
         return accountHoldersName;
     }
