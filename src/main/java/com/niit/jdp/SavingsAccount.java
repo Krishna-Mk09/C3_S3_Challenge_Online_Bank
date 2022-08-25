@@ -19,5 +19,75 @@ public class SavingsAccount {
     private float intrestRate;
     private String modeOfOperation;
 
+    public String getAccountHoldersName() {
+        return accountHoldersName;
+    }
 
+    public void setAccountHoldersName(String accountHoldersName) {
+        this.accountHoldersName = accountHoldersName;
+    }
+
+    public long getAccountNumber() {
+        return accountNumber;
+    }
+
+    public void setAccountNumber(long accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
+    public String getAccountOpeningDate() {
+        return accountOpeningDate;
+    }
+
+    public void setAccountOpeningDate(String accountOpeningDate) {
+        this.accountOpeningDate = accountOpeningDate;
+    }
+
+    public String getAccountStatus() {
+        return accountStatus;
+    }
+
+    public void setAccountStatus(String accountStatus) {
+        this.accountStatus = accountStatus;
+    }
+
+    public double getAvailableBalance() {
+        return availableBalance;
+    }
+
+    public void setAvailableBalance(double availableBalance) {
+        this.availableBalance = availableBalance;
+    }
+
+    public double getTotalBalance() {
+        return totalBalance;
+    }
+
+    public void setTotalBalance(double totalBalance) {
+        this.totalBalance = totalBalance;
+    }
+
+    public boolean isMobileBankingEnabled() {
+        return isMobileBankingEnabled;
+    }
+
+    public void setMobileBankingEnabled(boolean mobileBankingEnabled) {
+        isMobileBankingEnabled = mobileBankingEnabled;
+    }
+
+    public float getIntrestRate() {
+        return intrestRate;
+    }
+
+    public void setIntrestRate(float intrestRate) {
+        this.intrestRate = intrestRate;
+    }
+
+    public String getModeOfOperation() {
+        return modeOfOperation;
+    }
+
+    public void setModeOfOperation(String modeOfOperation) {
+        this.modeOfOperation = modeOfOperation;
+    }
 }
