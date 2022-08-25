@@ -15,9 +15,10 @@ public class SavingsAccount {
     private String accountStatus;
     private double availableBalance;
     private double totalBalance;
-    private boolean isMobileBankingEnabled;
+    private String InternetMobileBankingEnabled;
     private float intrestRate;
     private String modeOfOperation;
+
 
     public SavingsAccount() {
     }
@@ -70,13 +71,6 @@ public class SavingsAccount {
         this.totalBalance = totalBalance;
     }
 
-    public boolean isMobileBankingEnabled() {
-        return isMobileBankingEnabled;
-    }
-
-    public void setMobileBankingEnabled(boolean mobileBankingEnabled) {
-        isMobileBankingEnabled = mobileBankingEnabled;
-    }
 
     public float getIntrestRate() {
         return intrestRate;
@@ -94,17 +88,37 @@ public class SavingsAccount {
         this.modeOfOperation = modeOfOperation;
     }
 
-    public double retrieveBalance(double availableBalance) {
+    public String getInternetMobileBankingEnabled() {
+        return InternetMobileBankingEnabled;
+    }
+
+    public void setInternetMobileBankingEnabled(String internetMobileBankingEnabled) {
+        InternetMobileBankingEnabled = internetMobileBankingEnabled;
+    }
+
+    public double retrieveBalance() {
         return availableBalance;
     }
 
+
     public double debitBalance(double cash) {
-        return availableBalance - cash;
+        return totalBalance - cash;
     }
 
     public double creditBalance(double cash) {
-        return availableBalance + cash;
+        return totalBalance + cash;
 
     }
 
+    public void displayDetails() {
+        System.out.println("your account number is " + getAccountNumber());
+        System.out.println("account status is" + getAccountStatus());
+        System.out.println("account holders name" + getAccountHoldersName());
+        System.out.println(getAccountOpeningDate());
+        System.out.println(getInternetMobileBankingEnabled());
+        System.out.println(getTotalBalance());
+        System.out.println(getModeOfOperation());
+        System.out.println(getIntrestRate());
+        System.out.println(getAvailableBalance());
+    }
 }
