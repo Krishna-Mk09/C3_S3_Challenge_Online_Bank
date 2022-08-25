@@ -96,20 +96,38 @@ public class SavingsAccount {
         InternetMobileBankingEnabled = internetMobileBankingEnabled;
     }
 
+    /**
+     * This function returns the available balance.
+     *
+     * @return The available balance of the account.
+     */
     public double retrieveBalance() {
         return availableBalance;
     }
 
 
+    /**
+     * This function takes in a double and returns a double.
+     *
+     * @param cash The amount of money to be withdrawn from the account.
+     * @return The total balance minus the cash.
+     */
     public double debitBalance(double cash) {
         return totalBalance - cash;
     }
 
+    /**
+     * This function takes in a double value and returns a double value
+     *
+     * @param cash the amount of money to be deposited
+     * @return The total balance plus the cash.
+     */
     public double creditBalance(double cash) {
         return totalBalance + cash;
 
     }
 
+    // A method that displays the details of the account.
     public void displayDetails() {
         System.out.println("your account number is : " + getAccountNumber());
         System.out.println("account status is :" + getAccountStatus());

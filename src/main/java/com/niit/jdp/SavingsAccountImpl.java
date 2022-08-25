@@ -9,6 +9,7 @@
 package com.niit.jdp;
 
 public class SavingsAccountImpl {
+    // This is the main method which is the entry point for the program.
     public static void main(String[] args) {
         SavingsAccount savingsAccount = new SavingsAccount();
         savingsAccount.setAccountNumber(122333444);
