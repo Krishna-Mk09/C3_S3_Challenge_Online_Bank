@@ -22,13 +22,13 @@ public class SavingsAccountImpl {
         savingsAccount.setModeOfOperation("online");
         savingsAccount.displayDetails();
         double credit = savingsAccount.creditBalance(500);
-        System.out.println(credit);//25000+500
+        System.out.println("Balance after crediting is :" + credit);//25000+500
         savingsAccount.setTotalBalance(credit);
         double debit = savingsAccount.debitBalance(600);
-        System.out.println(debit);///25000+500-600
+        System.out.println("Balance after debiting is :" + debit);///25000+500-600
         savingsAccount.setTotalBalance(debit);
         savingsAccount.setAvailableBalance(savingsAccount.getTotalBalance());
-        System.out.println(savingsAccount.retrieveBalance());
+        System.out.println("Your retrived balance is :" + savingsAccount.retrieveBalance());
 
     }
 }
