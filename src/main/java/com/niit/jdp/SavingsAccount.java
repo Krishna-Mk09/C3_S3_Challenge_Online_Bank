@@ -129,14 +129,15 @@ public class SavingsAccount {
 
     // A method that displays the details of the account.
     public void displayDetails() {
-        System.out.println("your account number is : " + getAccountNumber());
-        System.out.println("account status is :" + getAccountStatus());
-        System.out.println("account holders name :" + getAccountHoldersName());
-        System.out.println("date of account opened :" + getAccountOpeningDate());
-        System.out.println("mobile banking :" + getInternetMobileBankingEnabled());
-        System.out.println("your balance :" + getTotalBalance());
-        System.out.println("mode :" + getModeOfOperation());
-        System.out.println("intrest rate :" + getIntrestRate());
-        System.out.println("your balance is :" + getAvailableBalance());
+        System.out.println("Your account number is : " + getAccountNumber());
+        System.out.println("Account status is :" + getAccountStatus());
+        System.out.println("Account holders name :" + getAccountHoldersName());
+        System.out.println("Date of account opened :" + getAccountOpeningDate());
+        System.out.println("Mobile banking :" + getInternetMobileBankingEnabled());
+        System.out.println("Your balance :" + getTotalBalance());
+        System.out.println("Mode :" + getModeOfOperation());
+        System.out.println("Intrest rate :" + getIntrestRate());
+        System.out.println("Your balance is :" + getAvailableBalance());
+
     }
 }
