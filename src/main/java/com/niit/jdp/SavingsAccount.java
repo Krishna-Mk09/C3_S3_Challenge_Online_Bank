@@ -93,7 +93,7 @@ public class SavingsAccount {
     }
 
     public void setInternetMobileBankingEnabled(String internetMobileBankingEnabled) {
-        InternetMobileBankingEnabled = internetMobileBankingEnabled;
+        this.InternetMobileBankingEnabled = internetMobileBankingEnabled;
     }
 
     /**
